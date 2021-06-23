@@ -1,6 +1,7 @@
 import React from 'react';
 import home from './components/home';
 import Navbar from './components/Navbar'
+// import Carousel from './components/Carousel'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
@@ -9,10 +10,10 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 function App() {
   return (
     <Router>
-     
+     <Navbar/>
     <Switch>
       
-    <Route path="/" exact component={Navbar}  />  
+    {/* <Route path="/Carousel" exact component={Carousel}  />   */}
     <Route path="/" exact component={home}  />  
    </Switch>
   
