@@ -27,9 +27,9 @@ const navbar = () => {
   <>
         
         <Navbar bg="light" expand="lg" >
-          <Container>
+          
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse className="justify-content-center">
                       <Nav  className="me-auto">
                         <Nav.Link  href="#home">Home</Nav.Link>
                         <Nav.Link href="#link">Single Seat sofa</Nav.Link>
@@ -41,7 +41,7 @@ const navbar = () => {
                       
                       </Nav>
                     </Navbar.Collapse>
-          </Container>
+         
         </Navbar>
         </>
     </div>
