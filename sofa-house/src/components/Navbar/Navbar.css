@@ -2,4 +2,9 @@
   font-size: 20px;
   text-transform: uppercase;
   font-weight: bold;
+  color: black;
+}
+.me-auto,
+Nav.Link {
+  color: black;
 }
