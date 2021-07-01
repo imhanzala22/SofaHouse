@@ -1,8 +1,9 @@
 import React from 'react';
-import {Card,Button} from 'react-bootstrap';
+import {Card,Button,Col} from 'react-bootstrap';
 import image from '../../Assets/CardImages/1.jpg'
 const Cards = () => {
     return ( <div>
+            <Col md={4}>
             <Card style={{ width: '18rem' }}>
                 
                     <Card.Body>
@@ -15,6 +16,7 @@ const Cards = () => {
                                  <Button variant="primary">Go somewhere</Button>
                    </Card.Body>
            </Card>
+           </Col>
     </div> );
 }
  
