@@ -2,8 +2,9 @@ import React from 'react'
 import './home.css'
 import Carousel from '../Carousel/Carousel'
 import Card from '../Card/Card';
-import image from '../../Assets/CardImages/1.jpg'
+
 import {Row, Container} from 'react-bootstrap';
+import BImage from '../BigImage/BImage';
 
 const Home = () => {
     return ( <div>
@@ -21,9 +22,22 @@ const Home = () => {
       <Card/>
       <Card/>
       </Row>
+      <h1>
+       Local orineted Designs
+      </h1>
       <Row >
-        <img src={image} width='100%' height='500px' alt="full image" />
+       <BImage/>
       </Row>
+
+      <h1>
+       other popular demands
+      </h1>
+      <Row>
+      <Card/>
+      <Card/>
+      <Card/>
+      </Row>
+
       </Container>
       
       
