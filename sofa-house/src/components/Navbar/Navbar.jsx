@@ -31,7 +31,7 @@ const navbar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className="justify-content-center">
                       <Nav  className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
+                        {/* <Nav.Link href="#home">Home</Nav.Link> */}
                         <Nav.Link href="#link">Single Seat sofa</Nav.Link>
                         <Nav.Link href="#link">Double Seat sofa</Nav.Link>
                         <Nav.Link href="#link">three seeter sofa</Nav.Link>
