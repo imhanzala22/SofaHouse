@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import { Nav,Container,Navbar,FormControl,Button,Form } from 'react-bootstrap';
 import './Navbar.css'
 
@@ -8,7 +9,7 @@ const navbar = () => {
         <Navbar bg="light" expand="lg">
                   <Container>
                     
-                    <Navbar.Brand href="#home">SOFA HOUSE</Navbar.Brand>
+                <Link to='/'>    <Navbar.Brand >SOFA HOUSE</Navbar.Brand></Link>
                  <Form className="d-flex">
                   <FormControl
                     type="search"
@@ -18,10 +19,7 @@ const navbar = () => {
                   />
                   <Button expand="outline-success">Search</Button>
                   </Form>
-                     <Nav className='Navspace'>
-                        <Nav.Link href="#link">Sign In</Nav.Link>
-                        <Nav.Link href="#link">Sign up</Nav.Link>
-                     </Nav>
+                    
                   </Container>
         </Navbar>
   <>
@@ -31,13 +29,13 @@ const navbar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className="justify-content-center">
                       <Nav  className="me-auto">
-                        {/* <Nav.Link href="#home">Home</Nav.Link> */}
-                        <Nav.Link href="#link">Single Seat sofa</Nav.Link>
-                        <Nav.Link href="#link">Double Seat sofa</Nav.Link>
-                        <Nav.Link href="#link">three seeter sofa</Nav.Link>
-                        <Nav.Link href="#link">Deewan</Nav.Link>
-                        <Nav.Link href="#link">velvot sofa</Nav.Link>
-                        <Nav.Link href="#link">Leather sofa</Nav.Link>
+                        {/* <Nav href="#home">Home</Nav> */}
+                        <Link to="./SingleSofaSet"><Nav >Single Seat sofa</Nav></Link>
+                       <Link to="/DoubleSofaSet"> <Nav >Double Seat sofa</Nav></Link>
+                       <Link to="/TrippleSofaSet"> <Nav >three seeter sofa</Nav> </Link>
+                       <Link to="/Deewan"> <Nav >Deewan</Nav></Link>
+                       <Link to="/LeatherSofa"> <Nav >velvot sofa</Nav></Link>
+                       <Link to="/VelvotSofa"> <Nav >Leather sofa</Nav></Link>
                       
                       </Nav>
                     </Navbar.Collapse>

@@ -8,3 +8,10 @@
 .navbar-light .navbar-nav .nav-link {
   color: black;
 }
+a {
+  text-decoration: none;
+}
+a .navbar-nav {
+  padding: 10px;
+  color: black;
+}
